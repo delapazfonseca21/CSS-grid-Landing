@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2rem;
+}
+main{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.principal img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.info button{
+    padding: 1.2rem 2.4rem;
+    border: none;
+    color: #333;
+    font-weight: bolder;
+    border-radius: 0.9rem;
+    background-color: cadetblue;
+    cursor: pointer;
+    margin-top: 3.5rem;
+}
+.principal{
+    display: grid;
+    grid-template-columns: minmax(30rem, 2fr) 3fr;
+    grid-auto-rows: 50.5rem;
+    border-bottom: 0.1rem solid #ddddddaf;
+}
+.info-title{
+    color: #333;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.info{
+    place-self: center;
+    margin-left: 5rem;
+}
+
+/*Segunda sección*/
+
+.platos{
+    margin: 10rem 0;
+}
+
+.platos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 20rem));
+    grid-auto-rows: 1fr;
+    gap: 2.5rem;
+    justify-content: center;
+}
+.platos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.plato-principal{
+    grid-area: 1 / 1 / 3 / 3;
+}
+.titulo-platos{
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #333;
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+/*Tercera sección*/
+.menu{
+    margin-bottom: 4.5rem;
+    border-top: 0.1rem solid #ddddddaf;
+}
+.menu-title{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bolder;
+    text-align: center;
+    margin: 5rem 0 5rem;
+}
+.menu-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    gap: 2.5rem;
+}
+.menu-grid{
+    padding: 1.5rem;
+
+}
+.menu-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.menu-item{
+    background-color: rgb(241, 148, 114);
+    border-top-left-radius: 4rem;
+}
+
